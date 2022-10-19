@@ -24,7 +24,7 @@
     "lint": "eslint src",
     "lint-fix": "eslint src --quiet --fix",
     "prepare": "husky install",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
