@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src",
-    "lint-fix": "eslint src --quiet --fix"
+    "lint-fix": "eslint src --quiet --fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -62,5 +63,11 @@
     "hooks": {
       "pre-commit": "npm run lint && npm run test"
     }
+  },
+  "lint-staged": {
+    "src/*.{js,json,css,scss,html,md,ts,tsx}": [
+      "npm run lint",
+      "npm run test"
+    ]
   }
 }
