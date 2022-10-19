@@ -1,3 +1,7 @@
+# Follow this
+[https://www.alexey-nikiforov.name/setup-react-app-with-typescript-eslint-and-prettier](https://www.alexey-nikiforov.name/setup-react-app-with-typescript-eslint-and-prettier)
+[https://github.com/okonet/lint-staged](https://github.com/okonet/lint-staged)
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
