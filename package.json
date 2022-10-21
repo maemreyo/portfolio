@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://william-tee.github.io/portfolio",
+  "homepage": "https://maemreyo.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
@@ -39,7 +39,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint-fix": "eslint src --quiet --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "prepare": "husky install",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
@@ -91,7 +90,7 @@
     }
   },
   "lint-staged": {
-    "src/*.{js,json,css,scss,html,md,ts,tsx}": [
+    "src/*": [
       "npm run lint",
       "npm run test"
     ]
