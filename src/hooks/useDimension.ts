@@ -1,7 +1,7 @@
 // 👇️ ts-nocheck disables type checking for entire file
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 // Naive implementation - in reality would want to attach
 // a window or resize listener. Also use state/layoutEffect instead of ref/effect

@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import 'swiper/swiper-bundle.min.css';
-import { AnimatedBlock } from '../../common/AnimatedBlock';
-import { TransitionArray } from '../../common/TransitionArray';
-import Logo from '../Logo';
+import { FC } from "react";
+import "swiper/swiper-bundle.min.css";
+import { AnimatedBlock } from "../../common/AnimatedBlock";
+import { TransitionArray } from "../../common/TransitionArray";
+import Logo from "../Logo";
 
 interface IHero {
   logo: string;
@@ -18,7 +18,7 @@ export const Hero: FC<IHero> = ({ logo }) => {
         <br />
         <br />
         <p className="font-mono font-semibold text-6xl subpixel-antialiased text-gray-200">
-          I'm{' '}
+          I'm{" "}
           <span className="font-mono font-semibold  subpixel-antialiased text-yellow-500">
             <TransitionArray />
           </span>

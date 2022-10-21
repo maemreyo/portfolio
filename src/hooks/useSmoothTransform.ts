@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { MotionValue, useSpring, useTransform } from 'framer-motion';
-import { SpringOptions } from 'popmotion';
+import { MotionValue, useSpring, useTransform } from "framer-motion";
+import { SpringOptions } from "popmotion";
 
 export function useSmoothTransform(
   value: MotionValue<unknown>,

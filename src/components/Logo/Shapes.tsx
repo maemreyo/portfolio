@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { motion } from 'framer-motion-3d';
-import { MotionConfig } from 'framer-motion';
-import { useRef, useLayoutEffect } from 'react';
-import { transition } from './settings';
-import { Canvas, useThree } from '@react-three/fiber';
-import { useSmoothTransform } from '../../hooks/useSmoothTransform';
+import { motion } from "framer-motion-3d";
+import { MotionConfig } from "framer-motion";
+import { useRef, useLayoutEffect } from "react";
+import { transition } from "./settings";
+import { Canvas, useThree } from "@react-three/fiber";
+import { useSmoothTransform } from "../../hooks/useSmoothTransform";
 
 const spring = { stiffness: 600, damping: 30 };
 
@@ -43,7 +43,13 @@ function Camera({ mouseX, mouseY, ...props }) {
     return cameraX.onChange(() => camera.lookAt(scene.position));
   }, [cameraX]);
 
-  return <motion.perspectiveCamera ref={cameraRef} fov={90} position={[cameraX, cameraY, 3.8]} />;
+  return (
+    <motion.perspectiveCamera
+      ref={cameraRef}
+      fov={90}
+      position={[cameraX, cameraY, 3.8]}
+    />
+  );
 }
 
 export function Material() {
@@ -81,8 +87,8 @@ export function Cone() {
           z: 1.1,
           x: -1.5,
           rotateX: -0.2,
-          rotateZ: 0.4
-        }
+          rotateZ: 0.4,
+        },
       }}
     >
       <coneGeometry args={[0.3, 0.6, 20]} />
@@ -100,8 +106,8 @@ export function Torus() {
         hover: {
           y: 0.5,
           z: 2,
-          rotateY: -0.2
-        }
+          rotateY: -0.2,
+        },
       }}
     >
       <torusGeometry args={[0.2, 0.1, 10, 50]} />
@@ -120,8 +126,8 @@ export function Icosahedron() {
           x: 1.8,
           z: 0.6,
           y: 0.6,
-          rotateZ: -0.5
-        }
+          rotateZ: -0.5,
+        },
       }}
     >
       <icosahedronGeometry args={[0.7, 0]} />
@@ -138,15 +144,18 @@ export function Shapes({ isHover, isPress, mouseX, mouseY }) {
     <Canvas shadows dpr={[1, 2]} resize={{ scroll: false, offsetSize: true }}>
       <Camera mouseX={mouseX} mouseY={mouseY} />
       <MotionConfig transition={transition}>
-        <motion.group center={[0, 0, 0]} rotation={[lightRotateX, lightRotateY, 0]}>
+        <motion.group
+          center={[0, 0, 0]}
+          rotation={[lightRotateX, lightRotateY, 0]}
+        >
           <Lights />
         </motion.group>
         <motion.group
           initial={false}
-          animate={isHover ? 'hover' : 'rest'}
+          animate={isHover ? "hover" : "rest"}
           dispose={null}
           variants={{
-            hover: { z: isPress ? -0.9 : 0 }
+            hover: { z: isPress ? -0.9 : 0 },
           }}
         >
           <Sphere />

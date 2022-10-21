@@ -1,9 +1,9 @@
-import './style.scss';
-import { Suspense, useState } from 'react';
-import { motion, MotionConfig, useMotionValue } from 'framer-motion';
-import { Shapes } from './Shapes';
-import useMeasure from 'react-use-measure';
-import { transition } from './settings';
+import "./style.scss";
+import { Suspense, useState } from "react";
+import { motion, MotionConfig, useMotionValue } from "framer-motion";
+import { Shapes } from "./Shapes";
+import useMeasure from "react-use-measure";
+import { transition } from "./settings";
 
 export default function Logo({ image }: { image: string }) {
   const [ref, bounds] = useMeasure({ scroll: false });
@@ -23,12 +23,12 @@ export default function Logo({ image }: { image: string }) {
         className="logo-button"
         ref={ref}
         initial={false}
-        animate={isHover ? 'hover' : 'rest'}
+        animate={isHover ? "hover" : "rest"}
         whileTap="press"
         variants={{
           rest: { scale: 1 },
           hover: { scale: 1.4 },
-          press: { scale: 1.2 }
+          press: { scale: 1.2 },
         }}
         onHoverStart={() => {
           resetMousePosition();
@@ -50,18 +50,26 @@ export default function Logo({ image }: { image: string }) {
           className="shapes"
           variants={{
             rest: { opacity: 0 },
-            hover: { opacity: 1 }
+            hover: { opacity: 1 },
           }}
         >
           <div className="pink blush" />
           <div className="blue blush" />
           <div className="container">
             <Suspense fallback={null}>
-              <Shapes isHover={isHover} isPress={isPress} mouseX={mouseX} mouseY={mouseY} />
+              <Shapes
+                isHover={isHover}
+                isPress={isPress}
+                mouseX={mouseX}
+                mouseY={mouseY}
+              />
             </Suspense>
           </div>
         </motion.div>
-        <motion.div variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }} className="label">
+        <motion.div
+          variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
+          className="label"
+        >
           <img src={image} className="logo-image" width={480} height={480} />
         </motion.div>
       </motion.button>

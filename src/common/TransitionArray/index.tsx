@@ -1,99 +1,99 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
-import { FC, useEffect, useState } from 'react';
-import { useTransition, animated, config } from 'react-spring';
+import { FC, useEffect, useState } from "react";
+import { useTransition, animated, config } from "react-spring";
 
 const NUM_TRANS = [
   {
-    fig: 'W',
+    fig: "W",
     op: { range: [0.75, 1], output: [0, 1] },
     trans: {
       range: [0.75, 1],
       output: [-80, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'i',
+    fig: "i",
     op: {
       range: [0.25, 0.5],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0.25, 0.5],
       output: [-70, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'l',
+    fig: "l",
     op: {
       range: [0, 0.25],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0, 0.25],
       output: [-60, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'l',
+    fig: "l",
     op: {
       range: [0.5, 0.75],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0.5, 0.75],
       output: [-50, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'i',
+    fig: "i",
     op: { range: [0.75, 1], output: [0, 1] },
     trans: {
       range: [0.75, 1],
       output: [-40, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'a',
+    fig: "a",
     op: {
       range: [0.25, 0.5],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0.25, 0.5],
       output: [-40, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'm',
+    fig: "m",
     op: {
       range: [0, 0.25],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0, 0.25],
       output: [-40, 0],
-      extrapolate: 'clamp'
-    }
+      extrapolate: "clamp",
+    },
   },
   {
-    fig: 'T',
+    fig: "T",
     op: {
       range: [0.5, 0.75],
-      output: [0, 1]
+      output: [0, 1],
     },
     trans: {
       range: [0.5, 0.75],
       output: [-40, 0],
-      extrapolate: 'clamp'
-    }
-  }
+      extrapolate: "clamp",
+    },
+  },
 ];
 export const TransitionArray: FC = () => {
   const [items, setItems] = useState(NUM_TRANS);
@@ -104,7 +104,7 @@ export const TransitionArray: FC = () => {
     leave: { opacity: 0 },
     delay: 200,
     config: config.molasses,
-    onRest: () => setItems([])
+    onRest: () => setItems([]),
   });
 
   useEffect(() => {
@@ -116,12 +116,14 @@ export const TransitionArray: FC = () => {
   }, [items]);
 
   return (
-    <div style={{ display: 'inline-flex' }}>
+    <div style={{ display: "inline-flex" }}>
       {transitions(({ opacity }, item) => (
         <animated.div
           style={{
             opacity: opacity.to(item.op),
-            transform: opacity.to(item.trans).to((y) => `translate3d(0,${y}px,0)`)
+            transform: opacity
+              .to(item.trans)
+              .to((y) => `translate3d(0,${y}px,0)`),
           }}
         >
           {item.fig}

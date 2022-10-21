@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import { AnimatedBlock } from '../../common/AnimatedBlock';
-import { Profile } from '../../models/data';
-import { formatTime } from '../../utils/time';
-import './about.scss';
+import { FC } from "react";
+import { AnimatedBlock } from "../../common/AnimatedBlock";
+import { Profile } from "../../models/data";
+import { formatTime } from "../../utils/time";
+import "./about.scss";
 interface IAbout {
   profile: Profile;
 }
@@ -32,7 +32,7 @@ export const About: FC<IAbout> = ({ profile }) => {
           </li>
           <li className="flex mb-3">
             <span className="font-[600] text-white w-1/5">Date of birth:</span>
-            <span>{formatTime(profile.dob, 'DDMMYYYY', 'LL')}</span>
+            <span>{formatTime(profile.dob, "DDMMYYYY", "LL")}</span>
           </li>
           <li className="flex mb-3">
             <span className="font-[600] text-white w-1/5">Address:</span>
