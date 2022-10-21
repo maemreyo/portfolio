@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { AnimatedBlock } from '../../common/AnimatedBlock';
 import { Profile } from '../../models/data';
+import { formatTime } from '../../utils/time';
 import './about.scss';
 interface IAbout {
   profile: Profile;
@@ -8,13 +9,13 @@ interface IAbout {
 
 export const About: FC<IAbout> = ({ profile }) => {
   return (
-    <div id="about" className="grid grid-cols-12 gap-16">
-      <div className="col-span-5 col-start-3">
+    <div id="about" className="section !grid grid-cols-12 gap-16">
+      <div className="col-span-7">
         <div className="w-full z-0 h-full bg-cover bg-no-repeat bg-center !items-stretch !flex">
-          <AnimatedBlock className="about-cover w-full h-full z-1 relative bg-cover bg-no-repeat bg-center !items-stretch !flex box-border"></AnimatedBlock>
+          <div className="about-cover w-full h-screen z-1 relative bg-cover bg-no-repeat bg-center !items-stretch !flex box-border"></div>
         </div>
       </div>
-      <div className="justify-end items-center col-span-5 relative pl-8">
+      <AnimatedBlock className="justify-end items-center col-span-5 relative pl-8">
         <h1 className="absolute -top-16 left-8 text-[7vw] text-[#ffffff1a] -z-50 font-[900]">
           About
         </h1>
@@ -31,7 +32,7 @@ export const About: FC<IAbout> = ({ profile }) => {
           </li>
           <li className="flex mb-3">
             <span className="font-[600] text-white w-1/5">Date of birth:</span>
-            <span>{profile.dob}</span>
+            <span>{formatTime(profile.dob, 'DDMMYYYY', 'LL')}</span>
           </li>
           <li className="flex mb-3">
             <span className="font-[600] text-white w-1/5">Address:</span>
@@ -50,7 +51,7 @@ export const About: FC<IAbout> = ({ profile }) => {
             <span>{profile.phone}</span>
           </li>
         </ul>
-      </div>
+      </AnimatedBlock>
     </div>
   );
 };
