@@ -1,13 +1,18 @@
 import { About } from './components/About';
 import { Hero } from './components/Hero';
 import { NavBar } from './components/Navbar';
+import data from './data.json';
+import { UserData } from './models/data';
+import { generateImagePath } from './utils/path';
 
 function App() {
+  const store: UserData = JSON.parse(JSON.stringify(data));
+
   return (
     <main className="container mx-auto">
       <NavBar />
-      <Hero />
-      <About />
+      <Hero logo={generateImagePath(store.images.logo)} />
+      <About profile={store.profile} />
     </main>
   );
 }

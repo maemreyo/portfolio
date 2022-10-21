@@ -1,0 +1,33 @@
+{
+    "profile": {
+        "name": "Ngo Nhu Thanh Trung",
+        "nickname": "WilliamT",
+        "dob": "14091998",
+        "address": "Nam Tu Liem, Hanoi",
+        "zipCode": 10000,
+        "email": "ngonhuthanhtrung1409@gmail.com",
+        "phone": "0961219097",
+        "hobbies": [
+            "Reading books",
+            "Listening to music"
+        ]
+    },
+    "socialMedia": {
+        "facebook": "https://www.facebook.com/profile.php?id=100067569151512",
+        "instagram": "https://www.instagram.com/trung.shyoski/",
+        "linkedin": "",
+        "github": "https://github.com/william-tee"
+    },
+    "work": {
+        "role": "developer",
+        "position": "software developer"
+    },
+    "images": {
+        "logo": "logo.jpg",
+        "about": "logo.jpg",
+        "projects": [
+            "",
+            ""
+        ]
+    }
+}

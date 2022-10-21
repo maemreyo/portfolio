@@ -27,8 +27,8 @@ export default function Logo({ image }: { image: string }) {
         whileTap="press"
         variants={{
           rest: { scale: 1 },
-          hover: { scale: 1.2 },
-          press: { scale: 1.3 }
+          hover: { scale: 1.4 },
+          press: { scale: 1.2 }
         }}
         onHoverStart={() => {
           resetMousePosition();
@@ -62,7 +62,7 @@ export default function Logo({ image }: { image: string }) {
           </div>
         </motion.div>
         <motion.div variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }} className="label">
-          <img src={image} className="logo-image" />
+          <img src={image} className="logo-image" width={480} height={480} />
         </motion.div>
       </motion.button>
     </MotionConfig>
