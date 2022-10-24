@@ -6,11 +6,11 @@ import { useDimensions } from "../../hooks/useDimension";
 import "./style.scss";
 
 const sidebar = {
-  open: (height = 200) => ({
+  open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at -40px -40px)`,
     transition: {
       type: "spring",
-      stiffness: 20,
+      stiffness: 40,
       restDelta: 2,
     },
   }),

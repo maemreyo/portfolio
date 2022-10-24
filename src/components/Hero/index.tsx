@@ -11,7 +11,7 @@ interface IHero {
 export const Hero: FC<IHero> = ({ logo }) => {
   return (
     <div id="hero" className="section grid grid-cols-3 gap-4">
-      <AnimatedBlock className="flex items-center col-span-2">
+      <AnimatedBlock className="flex items-center lg:col-span-2 md:col-span-3 md:row-start-1">
         <p className="font-mono font-semibold text-2xl subpixel-antialiased uppercase text-yellow-500">
           Hello!
         </p>
@@ -28,7 +28,7 @@ export const Hero: FC<IHero> = ({ logo }) => {
           A Software Developer
         </p>
       </AnimatedBlock>
-      <div className="flex justify-start items-center">
+      <div className="flex justify-start items-center lg:col-span-1 md:col-span-3 md:row-start-0">
         <AnimatedBlock className="p-12">
           <Logo image={logo} />
         </AnimatedBlock>

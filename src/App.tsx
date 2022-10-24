@@ -1,4 +1,4 @@
-import { motion, useScroll, useSpring } from "framer-motion";
+import { ProgressBar } from "./common/ProgressBar";
 import { About } from "./components/About";
 import { Hero } from "./components/Hero";
 import { NavBar } from "./components/Navbar";
@@ -7,18 +7,11 @@ import { UserData } from "./models/data";
 import { generateImagePath } from "./utils/path";
 
 function App() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
   const store: UserData = JSON.parse(JSON.stringify(data));
 
   return (
     <>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+      <ProgressBar />
       <main className="container mx-auto">
         <NavBar />
         <Hero logo={generateImagePath(store.images.logo)} />

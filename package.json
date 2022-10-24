@@ -90,7 +90,7 @@
     }
   },
   "lint-staged": {
-    "src/*.{js,json,css,scss,html,md,ts,tsx}": [
+    "src": [
       "npm run lint"
     ]
   }
