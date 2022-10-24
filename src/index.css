@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  /* background-image: linear-gradient(-60deg, #16a085 0%, #ffe062 100%); */
   margin: 0;
   font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -12,11 +13,12 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
+  /* color: #6fe2fe */
   color: #999999;
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-behavior: smooth;
 }
 
@@ -42,8 +44,8 @@ code {
   left: 0;
   right: 0;
   width: 100vw;
-  height: 10px;
-  background: greenyellow;
+  height: 5px;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
   transform-origin: 0%;
   z-index: 10;
 }

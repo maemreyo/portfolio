@@ -10,7 +10,7 @@ interface IAbout {
 
 export const About: FC<IAbout> = ({ profile }) => {
   return (
-    <div id="about" className="section !grid grid-cols-12 gap-16 sm:h-[50vh]">
+    <div id="about" className="section !grid grid-cols-12 gap-16 ">
       <div className="lg:col-span-7 md:col-span-12 sm:col-span-12">
         <div className="w-full z-0 h-full bg-cover bg-no-repeat bg-center !items-stretch !flex">
           <div className="about-cover w-full lg:h-screen md:h-[50vh] z-1 relative bg-cover bg-no-repeat bg-center !items-stretch !flex box-border"></div>
@@ -40,7 +40,7 @@ export const About: FC<IAbout> = ({ profile }) => {
             <span className="font-[600] text-white w-1/4 md:w-1/3">
               Date of birth:
             </span>
-            <span>{formatTime(profile.dob, "DDMMYYYY", "LL")}</span>
+            <span>{formatTime(profile.dob, "LL")}</span>
           </li>
           <li className="flex mb-3">
             <span className="font-[600] text-white w-1/4 md:w-1/3">

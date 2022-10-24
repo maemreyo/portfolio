@@ -2,6 +2,7 @@ export interface UserData {
   profile: Profile;
   socialMedia: SocialMedia;
   work: Work;
+  resume: Resume[];
   images: Images;
 }
 
@@ -26,6 +27,50 @@ export interface SocialMedia {
 export interface Work {
   role: string;
   position: string;
+}
+
+export interface Resume {
+  type: ResumeType;
+  fromDate: string;
+  toDate: string;
+  role: string;
+  organization: Organization;
+  location: string;
+  description: string;
+  projects: Project[];
+  accquiredKnowledge: AccquiredKnowledge[];
+}
+
+export enum ResumeType {
+  LEARNING = "learning",
+  WORKING = "working",
+}
+
+export interface Organization {
+  name: string;
+  link: string;
+}
+
+export interface Project {
+  name: string;
+  description: string;
+  responsibility: string;
+  technologies: string[];
+}
+
+export interface AccquiredKnowledge {
+  name: string;
+  level: Level;
+}
+
+export enum Level {
+  BEGINNER = "beginner",
+  HIGH_BEGINNER = "high beginner",
+  LOW_INTERMEDIATE = "low intermediate",
+  INTERMEDIATE = "intermediate",
+  HIGH_INTERMEDIATE = "high intermediate",
+  LOW_ADVANCED = "low advanced",
+  ADVANCED = "advanced",
 }
 
 export interface Images {

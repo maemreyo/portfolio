@@ -9,19 +9,278 @@
         "phone": "+84 961 2190 97",
         "hobbies": [
             "Reading books",
-            "Listening to music"
+            "Listening to music",
+            "Taking a cup of coffee and doing work"
         ]
     },
     "socialMedia": {
         "facebook": "https://www.facebook.com/profile.php?id=100067569151512",
         "instagram": "https://www.instagram.com/trung.shyoski/",
-        "linkedin": "",
-        "github": "https://github.com/william-tee"
+        "linkedin": "https://www.linkedin.com/in/th%C3%A0nh-trung-38b669164/",
+        "github": "https://github.com/maemreyo"
     },
     "work": {
         "role": "developer",
         "position": "software developer"
     },
+    "resume": [
+        {
+            "type": "learning",
+            "fromDate": "01092016",
+            "toDate": "21022021",
+            "role": "student",
+            "organization": {
+                "name": "PTIT",
+                "link": "https://portal.ptit.edu.vn"
+            },
+            "location": "hanoi",
+            "description": "In this time, I ...",
+            "projects": [
+                {
+                    "name": "Chat room",
+                    "description": "",
+                    "responsibility": "",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JS",
+                        "ReactJS",
+                        "Firebase"
+                    ]
+                }
+            ],
+            "accquiredKnowledge": [
+                {
+                    "name": "HTML",
+                    "level": "Beginner"
+                },
+                {
+                    "name": "CSS",
+                    "level": "Beginner"
+                },
+                {
+                    "name": "JS",
+                    "level": "Beginner"
+                },
+                {
+                    "name": "ReactJS",
+                    "level": "Beginner"
+                },
+                {
+                    "name": "Firebase",
+                    "level": "Beginner"
+                }
+            ]
+        },
+        {
+            "type": "working",
+            "fromDate": "01092019",
+            "toDate": "09032020",
+            "role": "frontend developer",
+            "organization": {
+                "name": "NBM",
+                "link": ""
+            },
+            "location": "hanoi",
+            "description": "In this time, I am responsible for maintaining and developing a website based on PHP for a clinic.",
+            "projects": [
+                {
+                    "name": "BaoNam Clinic",
+                    "description": "What is Baonam Clinic?",
+                    "responsibility": "responsible for?",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JS",
+                        "PHP",
+                        "Wordpress"
+                    ]
+                }
+            ],
+            "accquiredKnowledge": [
+                {
+                    "name": "HTML",
+                    "level": "High Beginner"
+                },
+                {
+                    "name": "CSS",
+                    "level": "High Beginner"
+                },
+                {
+                    "name": "JS",
+                    "level": "High Beginner"
+                },
+                {
+                    "name": "PHP",
+                    "level": "Beginner"
+                },
+                {
+                    "name": "Wordpress",
+                    "level": "Beginner"
+                }
+            ]
+        },
+        {
+            "type": "working",
+            "fromDate": "10032020",
+            "toDate": "20022022",
+            "role": "frontend developer",
+            "organization": {
+                "name": "NTQ Solution",
+                "link": "https://ntq.com.vn"
+            },
+            "location": "hanoi",
+            "description": "In this time, I ...",
+            "projects": [
+                {
+                    "name": "Stella",
+                    "description": "What is Stella?",
+                    "responsibility": "responsible for?",
+                    "technologies": [
+                        "ReactJS",
+                        "React Native"
+                    ]
+                },
+                {
+                    "name": "ToU",
+                    "description": "What is ToU?",
+                    "responsibility": "responsible for?",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JS",
+                        "VueJS (NuxtJS)"
+                    ]
+                }
+            ],
+            "accquiredKnowledge": [
+                {
+                    "name": "HTML",
+                    "level": "Intermediate"
+                },
+                {
+                    "name": "CSS",
+                    "level": "Intermediate"
+                },
+                {
+                    "name": "JS",
+                    "level": "Intermediate"
+                },
+                {
+                    "name": "ReactJS",
+                    "level": "Intermediate"
+                },
+                {
+                    "name": "React Native",
+                    "level": "Low Intermediate"
+                },
+                {
+                    "name": "VueJS (NuxtJS)",
+                    "level": "Beginner"
+                }
+            ]
+        },
+        {
+            "type": "working",
+            "fromDate": "21022022",
+            "toDate": "17082022",
+            "role": "frontend developer",
+            "organization": {
+                "name": "CMC Global",
+                "link": "https://cmcglobal.com.vn"
+            },
+            "location": "hanoi",
+            "description": "In this time, I ...",
+            "projects": [
+                {
+                    "name": "ToU",
+                    "description": "What is ToU?",
+                    "responsibility": "responsible for?",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JS",
+                        "ReactJS",
+                        "TypeScript"
+                    ]
+                }
+            ],
+            "accquiredKnowledge": [
+                {
+                    "name": "HTML",
+                    "level": "High Intermediate"
+                },
+                {
+                    "name": "CSS",
+                    "level": "High Intermediate"
+                },
+                {
+                    "name": "JS",
+                    "level": "Low Advanced"
+                },
+                {
+                    "name": "ReactJS",
+                    "level": "Advanced"
+                },
+                {
+                    "name": "TypeScript",
+                    "level": "Intermediate"
+                }
+            ]
+        },
+        {
+            "type": "working",
+            "fromDate": "18082022",
+            "toDate": "now",
+            "role": "frontend developer",
+            "organization": {
+                "name": "Cloud Software Group",
+                "link": "https://www.cloud.com"
+            },
+            "location": "hanoi",
+            "description": "In this time, I ...",
+            "projects": [
+                {
+                    "name": "ToU",
+                    "description": "What is ToU?",
+                    "responsibility": "responsible for?",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JS",
+                        "ReactJS",
+                        "TypeScript"
+                    ]
+                }
+            ],
+            "accquiredKnowledge": [
+                {
+                    "name": "HTML",
+                    "level": "Low Advanced"
+                },
+                {
+                    "name": "CSS",
+                    "level": "Low Advanced"
+                },
+                {
+                    "name": "JS",
+                    "level": "Low Advanced"
+                },
+                {
+                    "name": "ReactJS",
+                    "level": "Advanced"
+                },
+                {
+                    "name": "TypeScript",
+                    "level": "Low Advanced"
+                },
+                {
+                    "name": "Algorithms",
+                    "level": "High Beginner"
+                }
+            ]
+        }
+    ],
     "images": {
         "logo": "logo.jpg",
         "about": "logo.jpg",
