@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 body {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  /* background-image: linear-gradient(-60deg, #16a085 0%, #ffe062 100%); */
+  /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 0;
   font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -18,7 +29,7 @@ body {
 }
 
 html {
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity; */
   scroll-behavior: smooth;
 }
 

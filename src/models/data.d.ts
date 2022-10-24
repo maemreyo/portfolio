@@ -36,7 +36,7 @@ export interface Resume {
   role: string;
   organization: Organization;
   location: string;
-  description: string;
+  description: string[];
   projects: Project[];
   accquiredKnowledge: AccquiredKnowledge[];
 }
@@ -61,6 +61,7 @@ export interface Project {
 export interface AccquiredKnowledge {
   name: string;
   level: Level;
+  isNew: boolean;
 }
 
 export enum Level {

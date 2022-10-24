@@ -7,8 +7,8 @@ interface IResume {
 }
 export const Resume: FC<IResume> = ({ resume }) => {
   return (
-    <div id="resume" className="section !grid grid-cols-12 gap-16">
-      <div className="relative col-span-10 col-start-2 text-center">
+    <div id="resume" className="section !h-max !grid grid-cols-12 gap-16 mt-24">
+      <div className="relative col-span-10 col-start-2 text-center mb-12">
         <h1 className="text-center absolute top-0 left-0 right-0 text-[11vh] text-[#ffffff1a] -z-50 font-[900]">
           Resume
         </h1>

@@ -34,7 +34,10 @@
                 "link": "https://portal.ptit.edu.vn"
             },
             "location": "hanoi",
-            "description": "In this time, I ...",
+            "description": [
+                "During my 4 years of university, I spent time learning and improving my knowledge of telecommunications. In addition, I have learned more about web programming.",
+                "And to finish over 4 years of college, I had a small project called Chat Room. But for now, it's no longer maintained."
+            ],
             "projects": [
                 {
                     "name": "Chat room",
@@ -52,23 +55,28 @@
             "accquiredKnowledge": [
                 {
                     "name": "HTML",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 },
                 {
                     "name": "CSS",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 },
                 {
                     "name": "JS",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 },
                 {
                     "name": "ReactJS",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 },
                 {
                     "name": "Firebase",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 }
             ]
         },
@@ -82,7 +90,9 @@
                 "link": ""
             },
             "location": "hanoi",
-            "description": "In this time, I am responsible for maintaining and developing a website based on PHP for a clinic.",
+            "description": [
+                "In the time I was at NBM, I am responsible for maintaining and developing a website based on PHP for a clinic."
+            ],
             "projects": [
                 {
                     "name": "BaoNam Clinic",
@@ -100,23 +110,28 @@
             "accquiredKnowledge": [
                 {
                     "name": "HTML",
-                    "level": "High Beginner"
+                    "level": "High Beginner",
+                    "isNew": false
                 },
                 {
                     "name": "CSS",
-                    "level": "High Beginner"
+                    "level": "High Beginner",
+                    "isNew": false
                 },
                 {
                     "name": "JS",
-                    "level": "High Beginner"
+                    "level": "High Beginner",
+                    "isNew": false
                 },
                 {
                     "name": "PHP",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 },
                 {
                     "name": "Wordpress",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 }
             ]
         },
@@ -130,7 +145,10 @@
                 "link": "https://ntq.com.vn"
             },
             "location": "hanoi",
-            "description": "In this time, I ...",
+            "description": [
+                "I worked for a Japan's project, it's about 'Japanese Social Media for Fortune Tellers'. That's where users can get some advice from fortune tellers.",
+                "And I'm responsible for developing websites for administrators and users based on React JS. In addition, I learned how to develop a React Native application."
+            ],
             "projects": [
                 {
                     "name": "Stella",
@@ -156,27 +174,33 @@
             "accquiredKnowledge": [
                 {
                     "name": "HTML",
-                    "level": "Intermediate"
+                    "level": "Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "CSS",
-                    "level": "Intermediate"
+                    "level": "Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "JS",
-                    "level": "Intermediate"
+                    "level": "Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "ReactJS",
-                    "level": "Intermediate"
+                    "level": "Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "React Native",
-                    "level": "Low Intermediate"
+                    "level": "Low Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "VueJS (NuxtJS)",
-                    "level": "Beginner"
+                    "level": "Beginner",
+                    "isNew": true
                 }
             ]
         },
@@ -190,7 +214,9 @@
                 "link": "https://cmcglobal.com.vn"
             },
             "location": "hanoi",
-            "description": "In this time, I ...",
+            "description": [
+                "I had a short time working CMC Global, and I was responsible for creating new UI components for ZALORA's website. It's the short time, but I learned a lot from my partner."
+            ],
             "projects": [
                 {
                     "name": "ToU",
@@ -208,23 +234,28 @@
             "accquiredKnowledge": [
                 {
                     "name": "HTML",
-                    "level": "High Intermediate"
+                    "level": "High Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "CSS",
-                    "level": "High Intermediate"
+                    "level": "High Intermediate",
+                    "isNew": false
                 },
                 {
                     "name": "JS",
-                    "level": "Low Advanced"
+                    "level": "Low Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "ReactJS",
-                    "level": "Advanced"
+                    "level": "Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "TypeScript",
-                    "level": "Intermediate"
+                    "level": "Intermediate",
+                    "isNew": true
                 }
             ]
         },
@@ -238,7 +269,9 @@
                 "link": "https://www.cloud.com"
             },
             "location": "hanoi",
-            "description": "In this time, I ...",
+            "description": [
+                "In CSG, I am responsible for developing a new UI based on ReactJS for replacing existing Desktop application based on Java."
+            ],
             "projects": [
                 {
                     "name": "ToU",
@@ -256,27 +289,33 @@
             "accquiredKnowledge": [
                 {
                     "name": "HTML",
-                    "level": "Low Advanced"
+                    "level": "Low Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "CSS",
-                    "level": "Low Advanced"
+                    "level": "Low Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "JS",
-                    "level": "Low Advanced"
+                    "level": "Low Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "ReactJS",
-                    "level": "Advanced"
+                    "level": "Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "TypeScript",
-                    "level": "Low Advanced"
+                    "level": "Low Advanced",
+                    "isNew": false
                 },
                 {
                     "name": "Algorithms",
-                    "level": "High Beginner"
+                    "level": "High Beginner",
+                    "isNew": true
                 }
             ]
         }

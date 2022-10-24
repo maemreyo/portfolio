@@ -7,6 +7,7 @@ import { Link } from "../../common/Anchor";
 import { getColorByIndex } from "../../utils/color";
 import { ReactComponent as Learning } from "../../resources/svg/learning.svg";
 import { ReactComponent as Working } from "../../resources/svg/working.svg";
+import { Badge, Chip } from "@mui/material";
 
 interface ITimelineItem {
   item: Resume;
@@ -15,6 +16,7 @@ interface ITimelineItem {
 
 export const TimelineItem: FC<ITimelineItem> = ({ item, index }) => {
   const icon = item.type === "learning" ? <Learning /> : <Working />;
+
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -41,7 +43,27 @@ export const TimelineItem: FC<ITimelineItem> = ({ item, index }) => {
       <h4 className="vertical-timeline-element-subtitle">
         {toCapitalize(item.location)}
       </h4>
-      <p>{item.description}</p>
+      {item.description.map((value, key) => (
+        <p key={key}>{value}</p>
+      ))}
+      <br />
+      <>
+        {item.accquiredKnowledge.map((value, key) => (
+          <Badge
+            key={key}
+            badgeContent={value.isNew ? "New" : null}
+            className="mr-4 mb-4"
+            color="error"
+          >
+            <Chip
+              className="font-[900] italic"
+              label={value.name}
+              onClick={() => false}
+              color="info"
+            />
+          </Badge>
+        ))}
+      </>
     </VerticalTimelineElement>
   );
 };

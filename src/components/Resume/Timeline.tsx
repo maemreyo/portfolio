@@ -10,7 +10,7 @@ interface ITimeline {
 
 export const Timeline: FC<ITimeline> = ({ resume }) => {
   return (
-    <VerticalTimeline>
+    <VerticalTimeline animate>
       {resume.map((value, key) => {
         return <TimelineItem key={key} item={value} index={key} />;
       })}

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import "swiper/swiper-bundle.min.css";
 import { AnimatedBlock } from "../../common/AnimatedBlock";
+import { Animation } from "../../common/AnimatedBlock/animations";
 import { TransitionArray } from "../../common/TransitionArray";
 import Logo from "../Logo";
 
@@ -29,7 +30,7 @@ export const Hero: FC<IHero> = ({ logo }) => {
         </p>
       </AnimatedBlock>
       <div className="flex justify-start items-center lg:col-span-1 md:col-span-3 md:row-start-0">
-        <AnimatedBlock className="p-12">
+        <AnimatedBlock className="p-12" animation={Animation.rtl}>
           <Logo image={logo} />
         </AnimatedBlock>
       </div>
