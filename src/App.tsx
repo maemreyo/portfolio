@@ -1,7 +1,8 @@
 import { ProgressBar } from "./common/ProgressBar";
 import { About } from "./components/About";
+import { GithubStats } from "./components/GithubStats";
 import { Hero } from "./components/Hero";
-import { NavBar } from "./components/Navbar";
+import { LeetCodeStats } from "./components/Leetcode";
 import { Resume } from "./components/Resume";
 import data from "./data.json";
 import { UserData } from "./models/data";
@@ -14,10 +15,11 @@ function App() {
     <>
       <ProgressBar />
       <main className="container mx-auto">
-        {/* <NavBar /> */}
         <Hero logo={generateImagePath(store.images.logo)} />
         <About profile={store.profile} />
         <Resume resume={store.resume} />
+        <GithubStats />
+        <LeetCodeStats />
       </main>
     </>
   );
