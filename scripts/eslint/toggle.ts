@@ -4,7 +4,7 @@ import { info, processing } from "../utils/log";
 // TODO: check if there's a eslintignore, if not, create it.
 (async () => {
   const ESLINT_PATH = ".eslintignore";
-  const ESLINT_OFF = "# *";
+  const ESLINT_OFF = "# src/*";
 
   processing("Starting changing the ESLint configurations...")
   const customIndex = process.argv.indexOf('--mode');
@@ -21,11 +21,11 @@ import { info, processing } from "../utils/log";
 
   if (isForcedOn) {
     if (!isCommented) {
-      comment(ESLINT_PATH, "*");
+      comment(ESLINT_PATH, "src/*");
     }
   } else {
     if (isCommented) {
-      uncomment(ESLINT_PATH, "# *");
+      uncomment(ESLINT_PATH, "# src/*");
     }
   }
 })();
