@@ -44,7 +44,9 @@
     "lint-fix": "eslint src --quiet --fix",
     "prepare": "husky install",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "eslint:on": "tsc ./scripts/eslint/toggle.ts && node ./scripts/eslint/toggle.js --mode on",
+    "eslint:off": "tsc ./scripts/eslint/toggle.ts && node ./scripts/eslint/toggle.js --mode off"
   },
   "eslintConfig": {
     "extends": [
