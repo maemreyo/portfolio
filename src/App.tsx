@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       <ProgressBar />
-      <main className="container mx-auto">
+      <main className="container mx-auto mb-48">
         <Hero logo={generateImagePath(store.images.logo)} />
         <About profile={store.profile} />
         <Resume resume={store.resume} />
         <GithubStats />
-        <LeetCodeStats />
+        {/* <LeetCodeStats /> */}
       </main>
     </>
   );
