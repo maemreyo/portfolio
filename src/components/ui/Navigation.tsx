@@ -138,17 +138,17 @@ export default function Navigation({ personalInfo }: NavigationProps) {
             >
               <Link href="/">
                 <div className="flex items-center">
-                  {personalInfo.logoUrl ? (
+                  {/* {personalInfo.logoUrl ? (
                     <img 
                       src={personalInfo.logoUrl} 
                       alt={personalInfo.fullName}
                       className="h-10 w-auto"
                     />
-                  ) : (
+                  ) : ( */}
                     <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg">
-                      {personalInfo.displayName || personalInfo.fullName.split(' ').map(name => name[0])[0]}
+                      {personalInfo.displayName?.split(' ').map(name => name[0])[0] || personalInfo.fullName.split(' ').map(name => name[0])[0]}
                     </div>
-                  )}
+                  {/* )} */}
                 </div>
               </Link>
             </motion.div>
